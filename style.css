@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background: rgb(243, 243, 243);
+  --principal-color: rgb(203, 152, 233);
+  --title: rgb(58, 58, 58);
+  --text: rgb(146, 142, 142);
+  --quote: rgb(136, 136, 136);
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--background);
+}
+
+header {
+  padding: 20px;
+  margin-bottom: 40px;
+
+  text-align: center;
+  border-bottom: 1px solid var(--principal-color);
+}
+
+header p {
+  color: var(--text);
+}
+
+header h1 {
+  text-transform: uppercase;
+  color: var(--title);
+}
+
+section.cards {
+  display: block;
+  margin: 0 auto 30px auto;
+  max-width: 1024px;
+  width: 100%;
+}
+
+.card {
+  display: inline-block;
+  margin: 10px;
+  border: 1px solid var(--principal-color);
+  max-height: 100%;
+  vertical-align: top;
+}
+
+.card img {
+  display: block;
+  width: 300px;
+  height: 300px;
+}
+
+.card details {
+  display: inline-block;
+  width: 300px;
+  height: auto;
+  cursor: pointer;
+}
+
+::marker {
+  color: var(--principal-color);
+}
+
+.card details summary {
+  font-size: 18px;
+  padding: 10px;
+  color: var(--title);
+}
+
+.card details p {
+  padding: 0 10px;
+  color: var(--text);
+}
+
+.card details blockquote {
+  color: var(--quote);
+  font-style: italic;
+  padding: 15px;
+}
+
+@media (max-width: 768px) {
+  header {
+    margin-bottom: 20px;
+    height: 200px;
+  }
+
+  header h1 {
+    font-size: 36px;
+  } 
+
+  .card {
+    display: block;
+    margin:  20px 10px;
+  }
+
+  .card img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .card details {
+    width: 100%;
+  }
+  .card summary {
+    font-size: 16px;
+  }
+
+  .card p {
+    font-size: 14px;
+  }
+}
